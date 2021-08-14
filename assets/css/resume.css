@@ -1,0 +1,289 @@
+/*! 
+ * Version: Bootstrap 5 v1.0
+ * Author: Sergiy Safronov
+*/
+
+body {
+   opacity: 0;
+   /*transition: opacity 0.9s;*/
+
+    background-color: #e8f0f9;
+    min-width: 350px;
+    min-height: 450px;
+    width: 100%;
+    height: 100%;
+}
+
+html, body {
+  
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.main-image {
+  /*width: 100%;*/
+  /*height: auto;*/
+  height: 100vh;
+}
+
+.introduction-section {
+    padding-top: 120px;
+}
+
+.txt-rotate {
+  color:  #F68338;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+
+.skills-button {
+  padding-top: 5px;
+}
+
+
+/* Side Board ---------------------------*/
+.side-board {
+    background-color: #2d3d4e;/*#9fadbd;*/
+    color: #f3e8e4;
+}
+
+.side-board div {
+    /*padding-left: 10px;*/
+}
+
+.side-board p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.8em;
+}
+
+.side-title {
+    font-weight: bold;
+    padding-left: 10px;
+    background-color: #c1797944;
+}
+
+.side-links {
+    padding-left: 0;
+    padding: 0;
+    margin: 0;
+    text-align:center;
+}
+
+.side-surname h5 {
+    background-color: #5f9de0;
+    padding-top: 6px;
+    padding-bottom: 2px;
+}
+
+.skills-top {
+    padding-left: 10px;
+}
+
+
+
+
+.about-section {
+    color: #a9a9a9;
+}
+
+.section-title h2 {
+    font-weight: 600;
+    color: #170f0f;
+    font-size: 26px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 0 15px;
+    margin: 0 0 20px;
+}
+
+.section-title h2 span {
+    color: #F68338;
+}
+
+.section-title h2:before {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    left: 0;
+    margin: auto;
+    border: 2px solid #ffffff;
+    background: #F68338;
+}
+
+.section-title h2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -30px;
+    top: 30px;
+    border: 1px solid #000000;
+    border-top: none;
+    opacity: 0.1;
+    right: -20px;
+    border-radius: 0 0 30px 30px;
+}
+
+.dark-section {
+    background: #070708;
+    border-radius: 10px;
+}
+
+.section-title.small h2 {
+    font-size: 34px;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0 0 10px;
+}
+
+.section-title.small h2:before {
+    bottom: -7px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 0;
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+    border: none;
+}
+
+.small {
+    font-size: 80%;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+/* Resume ------------------------*/
+.resume-box li {
+        margin: 0 0 10px;
+        /*
+        position: relative;
+        padding-left: 20px;
+        background: rgba(255, 255, 255, 0.06);
+
+         padding: 25px;
+        border-radius: 5px;*/
+}
+
+
+.resume-box li &:last-child {
+    margin-bottom: 0;
+}
+
+.resume-box h6 {
+    font-weight: bold;
+}
+
+.resume-company {
+    color: #F68338;
+}
+
+.resume-bold {
+    font-weight: bold;
+}
+
+.education-details p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*
+.resume-box {
+    h3 {
+        color: $px-white;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    li {
+        position: relative;
+        padding-left: 20px;
+        background: rgba(255, 255, 255, 0.06);
+        margin: 0 0 30px;
+        padding: 25px;
+        border-radius: 5px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &:before {
+            content: "";
+            width: 15px;
+            height: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-width: 10px;
+            border-color: transparent currentColor currentColor transparent;
+            border-style: solid;
+            color: $px-theme;
+        }
+        &:after {
+            content: "";
+            width: 15px;
+            height: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-width: 10px;
+            border-color: currentColor transparent transparent currentColor;
+            border-style: solid;
+            color: $px-black;
+        }
+    }
+    .year {
+        font-size: 13px;
+        color: $px-white;
+        i {
+            margin-right: 5px;
+        }
+    }
+    h5 {
+        font-weight: 500;
+        font-size: 15px;
+        margin: 15px 0 8px 0;
+        color: $px-white;
+        span {
+            color: $px-white;
+            font-size: 12px;
+            display: inline-block;
+            margin-left: 7px;
+            border-left: 1px solid rgba($px-white,.3);
+            padding-left: 8px;
+        }
+    }
+    p {
+        font-size: 13px;
+        margin: 0;
+    }
+}
+*/
